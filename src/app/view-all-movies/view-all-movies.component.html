@@ -1,0 +1,19 @@
+<body>
+    
+        <app-nav-bar></app-nav-bar>
+   
+    
+    <h2>Movies</h2>
+
+  <div  class="container" >
+      <cdk-virtual-scroll-viewport 
+        [itemSize]="5"
+        style="width: 100%;" 
+       >
+        <div *cdkVirtualFor="let item of imageArray" class="image-item">
+          <img [src]="item" alt="Image" >
+        </div>
+      </cdk-virtual-scroll-viewport>
+    </div>
+
+</body>

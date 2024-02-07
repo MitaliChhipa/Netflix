@@ -1,0 +1,47 @@
+.nav_logo{
+    width:5rem;
+    object-fit: contain;
+}
+.nav-avatar{
+    width:2rem;
+    object-fit: contain;
+    padding:0.5rem;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    width:100%;
+}
+ul{
+    color:white;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav_left, .nav_left ul{
+    display: flex;
+}
+.nav_left ul{
+    gap:1rem;
+}
+.nav_left{
+    padding-left: 2rem;;
+}
+.nav_right{
+    padding-right:1rem;
+}
+
+.scrolled{
+    background-color: black;
+}
+
+@media(max-width:420px){
+    a{
+        font-size: .75em;
+    }
+}
